@@ -275,7 +275,7 @@ QPushButton:hover{
              <string notr="true">background-color:none;</string>
             </property>
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page_home">
              <property name="styleSheet">
@@ -472,7 +472,7 @@ color: rgb(105, 138, 255);</string>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QFrame" name="frame_circle_1">
+                     <widget class="QFrame" name="frame_circle_ram">
                       <property name="minimumSize">
                        <size>
                         <width>250</width>
@@ -595,7 +595,7 @@ color: rgb(105, 138, 255);</string>
                      </widget>
                     </item>
                     <item>
-                     <widget class="QFrame" name="frame_circle_2">
+                     <widget class="QFrame" name="frame_circle_gpu">
                       <property name="minimumSize">
                        <size>
                         <width>250</width>

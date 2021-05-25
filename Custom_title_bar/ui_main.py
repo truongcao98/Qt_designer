@@ -217,11 +217,11 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.frame_circle_3)
 
-        self.frame_circle_1 = QFrame(self.frame)
-        self.frame_circle_1.setObjectName(u"frame_circle_1")
-        self.frame_circle_1.setMinimumSize(QSize(250, 250))
-        self.frame_circle_1.setMaximumSize(QSize(250, 250))
-        self.frame_circle_1.setStyleSheet(u"QFrame {\n"
+        self.frame_circle_ram = QFrame(self.frame)
+        self.frame_circle_ram.setObjectName(u"frame_circle_ram")
+        self.frame_circle_ram.setMinimumSize(QSize(250, 250))
+        self.frame_circle_ram.setMaximumSize(QSize(250, 250))
+        self.frame_circle_ram.setStyleSheet(u"QFrame {\n"
 "	border: 5px solid rgb(116, 255, 255);\n"
 "	border-radius: 125px\n"
 "}\n"
@@ -229,39 +229,39 @@ class Ui_MainWindow(object):
 "QFrame:hover {\n"
 "	border: 5px solid rgb(0, 94, 94)\n"
 "}")
-        self.frame_circle_1.setFrameShape(QFrame.StyledPanel)
-        self.frame_circle_1.setFrameShadow(QFrame.Raised)
-        self.label = QLabel(self.frame_circle_1)
+        self.frame_circle_ram.setFrameShape(QFrame.StyledPanel)
+        self.frame_circle_ram.setFrameShadow(QFrame.Raised)
+        self.label = QLabel(self.frame_circle_ram)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(60, 30, 131, 31))
         self.label.setFont(font1)
         self.label.setStyleSheet(u"border:none;")
         self.label.setAlignment(Qt.AlignCenter)
-        self.label_2 = QLabel(self.frame_circle_1)
+        self.label_2 = QLabel(self.frame_circle_ram)
         self.label_2.setObjectName(u"label_2")
         self.label_2.setGeometry(QRect(40, 70, 171, 91))
         self.label_2.setFont(font2)
         self.label_2.setStyleSheet(u"border:none;\n"
 "color: rgb(105, 138, 255);")
         self.label_2.setAlignment(Qt.AlignCenter)
-        self.label_3 = QLabel(self.frame_circle_1)
+        self.label_3 = QLabel(self.frame_circle_ram)
         self.label_3.setObjectName(u"label_3")
         self.label_3.setGeometry(QRect(70, 170, 111, 21))
         self.label_3.setStyleSheet(u"border:none;")
         self.label_3.setAlignment(Qt.AlignCenter)
-        self.label_4 = QLabel(self.frame_circle_1)
+        self.label_4 = QLabel(self.frame_circle_ram)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(70, 200, 111, 21))
         self.label_4.setStyleSheet(u"border:none;")
         self.label_4.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_6.addWidget(self.frame_circle_1)
+        self.horizontalLayout_6.addWidget(self.frame_circle_ram)
 
-        self.frame_circle_2 = QFrame(self.frame)
-        self.frame_circle_2.setObjectName(u"frame_circle_2")
-        self.frame_circle_2.setMinimumSize(QSize(250, 250))
-        self.frame_circle_2.setMaximumSize(QSize(250, 250))
-        self.frame_circle_2.setStyleSheet(u"QFrame {\n"
+        self.frame_circle_gpu = QFrame(self.frame)
+        self.frame_circle_gpu.setObjectName(u"frame_circle_gpu")
+        self.frame_circle_gpu.setMinimumSize(QSize(250, 250))
+        self.frame_circle_gpu.setMaximumSize(QSize(250, 250))
+        self.frame_circle_gpu.setStyleSheet(u"QFrame {\n"
 "	border: 5px solid rgb(116, 255, 255);\n"
 "	border-radius: 125px\n"
 "}\n"
@@ -269,33 +269,33 @@ class Ui_MainWindow(object):
 "QFrame:hover {\n"
 "	border: 5px solid rgb(0, 94, 94)\n"
 "}")
-        self.frame_circle_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_circle_2.setFrameShadow(QFrame.Raised)
-        self.label_13 = QLabel(self.frame_circle_2)
+        self.frame_circle_gpu.setFrameShape(QFrame.StyledPanel)
+        self.frame_circle_gpu.setFrameShadow(QFrame.Raised)
+        self.label_13 = QLabel(self.frame_circle_gpu)
         self.label_13.setObjectName(u"label_13")
         self.label_13.setGeometry(QRect(60, 30, 131, 31))
         self.label_13.setFont(font1)
         self.label_13.setStyleSheet(u"border:none;")
         self.label_13.setAlignment(Qt.AlignCenter)
-        self.label_14 = QLabel(self.frame_circle_2)
+        self.label_14 = QLabel(self.frame_circle_gpu)
         self.label_14.setObjectName(u"label_14")
         self.label_14.setGeometry(QRect(40, 70, 171, 91))
         self.label_14.setFont(font2)
         self.label_14.setStyleSheet(u"border:none;\n"
 "color: rgb(105, 138, 255);")
         self.label_14.setAlignment(Qt.AlignCenter)
-        self.label_15 = QLabel(self.frame_circle_2)
+        self.label_15 = QLabel(self.frame_circle_gpu)
         self.label_15.setObjectName(u"label_15")
         self.label_15.setGeometry(QRect(70, 170, 111, 21))
         self.label_15.setStyleSheet(u"border:none;")
         self.label_15.setAlignment(Qt.AlignCenter)
-        self.label_16 = QLabel(self.frame_circle_2)
+        self.label_16 = QLabel(self.frame_circle_gpu)
         self.label_16.setObjectName(u"label_16")
         self.label_16.setGeometry(QRect(70, 200, 111, 21))
         self.label_16.setStyleSheet(u"border:none;")
         self.label_16.setAlignment(Qt.AlignCenter)
 
-        self.horizontalLayout_6.addWidget(self.frame_circle_2)
+        self.horizontalLayout_6.addWidget(self.frame_circle_gpu)
 
 
         self.verticalLayout_3.addWidget(self.frame)
@@ -362,7 +362,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.stackedWidget.setCurrentIndex(1)
+        self.stackedWidget.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
