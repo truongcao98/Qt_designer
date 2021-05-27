@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(865, 591)
+        MainWindow.resize(927, 543)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.drop_shadow_layout = QVBoxLayout(self.centralwidget)
@@ -77,10 +77,10 @@ class Ui_MainWindow(object):
         self.frame_btns.setFrameShadow(QFrame.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.frame_btns)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.bt_close = QPushButton(self.frame_btns)
-        self.bt_close.setObjectName(u"bt_close")
-        self.bt_close.setMaximumSize(QSize(17, 17))
-        self.bt_close.setStyleSheet(u"QPushButton{\n"
+        self.btn_minimize = QPushButton(self.frame_btns)
+        self.btn_minimize.setObjectName(u"btn_minimize")
+        self.btn_minimize.setMaximumSize(QSize(17, 17))
+        self.btn_minimize.setStyleSheet(u"QPushButton{\n"
 "	border: none;\n"
 "	border-radius:8px;\n"
 "	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 0, 255), stop:1 rgba(255, 255, 255, 255));\n"
@@ -91,7 +91,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
 
-        self.horizontalLayout_3.addWidget(self.bt_close)
+        self.horizontalLayout_3.addWidget(self.btn_minimize)
 
         self.btn_maximize = QPushButton(self.frame_btns)
         self.btn_maximize.setObjectName(u"btn_maximize")
@@ -109,10 +109,10 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.btn_maximize)
 
-        self.pushButton_3 = QPushButton(self.frame_btns)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setMaximumSize(QSize(17, 17))
-        self.pushButton_3.setStyleSheet(u"QPushButton{\n"
+        self.btn_close = QPushButton(self.frame_btns)
+        self.btn_close.setObjectName(u"btn_close")
+        self.btn_close.setMaximumSize(QSize(17, 17))
+        self.btn_close.setStyleSheet(u"QPushButton{\n"
 "	border: none;\n"
 "	border-radius:8px;\n"
 "	\n"
@@ -125,7 +125,7 @@ class Ui_MainWindow(object):
 "}\n"
 "")
 
-        self.horizontalLayout_3.addWidget(self.pushButton_3)
+        self.horizontalLayout_3.addWidget(self.btn_close)
 
 
         self.horizontalLayout.addWidget(self.frame_btns)
@@ -371,9 +371,18 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.label_title.setText(QCoreApplication.translate("MainWindow", u"This is my App - Title Bar", None))
-        self.bt_close.setText("")
+#if QT_CONFIG(tooltip)
+        self.btn_minimize.setToolTip(QCoreApplication.translate("MainWindow", u"Maximize", None))
+#endif // QT_CONFIG(tooltip)
+        self.btn_minimize.setText("")
+#if QT_CONFIG(tooltip)
+        self.btn_maximize.setToolTip(QCoreApplication.translate("MainWindow", u"Resize Window", None))
+#endif // QT_CONFIG(tooltip)
         self.btn_maximize.setText("")
-        self.pushButton_3.setText("")
+#if QT_CONFIG(tooltip)
+        self.btn_close.setToolTip(QCoreApplication.translate("MainWindow", u"Close", None))
+#endif // QT_CONFIG(tooltip)
+        self.btn_close.setText("")
         self.label_17.setText(QCoreApplication.translate("MainWindow", u"CPU USAGE", None))
         self.label_18.setText(QCoreApplication.translate("MainWindow", u"25%", None))
         self.label_19.setText(QCoreApplication.translate("MainWindow", u"intel i9-9900k: 8 core", None))

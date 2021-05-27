@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>865</width>
-    <height>591</height>
+    <width>927</width>
+    <height>543</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -160,12 +160,15 @@ border-radius: 8px;
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
-              <widget class="QPushButton" name="bt_close">
+              <widget class="QPushButton" name="btn_minimize">
                <property name="maximumSize">
                 <size>
                  <width>17</width>
                  <height>17</height>
                 </size>
+               </property>
+               <property name="toolTip">
+                <string>Maximize</string>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
@@ -192,6 +195,9 @@ QPushButton:hover{
                  <height>17</height>
                 </size>
                </property>
+               <property name="toolTip">
+                <string>Resize Window</string>
+               </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
 	border: none;
@@ -210,12 +216,15 @@ QPushButton:hover{
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="pushButton_3">
+              <widget class="QPushButton" name="btn_close">
                <property name="maximumSize">
                 <size>
                  <width>17</width>
                  <height>17</height>
                 </size>
+               </property>
+               <property name="toolTip">
+                <string>Close</string>
                </property>
                <property name="styleSheet">
                 <string notr="true">QPushButton{
